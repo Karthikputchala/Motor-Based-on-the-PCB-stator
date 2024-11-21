@@ -1,1 +1,0 @@
-# Motor-Based-on-the-PCB-stator
