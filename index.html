@@ -2,107 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCB Stator Motor Project</title>
+    <title>PCB Stator Motor Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Calibri, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
         }
-
-        .container {
-            max-width: 800px;
+        img, video {
             width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto; /* Center content */
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
-            text-align: left;
+            text-align: left; /* Align text to the left */
         }
-
         h1, h2 {
             color: #333;
         }
-
         p {
             line-height: 1.6;
             color: #555;
             margin-bottom: 15px;
         }
-
+        ul {
+            color: #555;
+            margin-bottom: 15px;
+        }
         .section {
             margin-bottom: 30px;
-        }
-
-        .section h2 {
-            margin-top: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="section">
-            <h1>PCB Stator Motor Project</h1>
-            <p>This project demonstrates a proof-of-concept motor utilizing a <strong>Printed Circuit Board (PCB) stator</strong> to replace traditional copper windings. By integrating copper traces directly onto the PCB and optimizing thermal management, the design enhances efficiency, simplifies manufacturing, and reduces material usage and waste.</p>
-        </div>
-
-        <div class="section">
-            <h2>PCB Stator Design</h2>
-            <p>The motor's stator is built using a <strong>1.2 mm thick, 2-layer PCB</strong> with <strong>0.3 mm wide copper traces</strong>. Key features include:</p>
-            <ul>
-                <li><strong>Integrated Copper Traces:</strong> Replacing traditional windings, these traces optimize energy conversion.</li>
-                <li><strong>Copper-Filled Regions:</strong> These regions help dissipate heat, ensuring the motor operates without overheating.</li>
-                <li><strong>Compact Structure:</strong> The thin PCB reduces the motor's weight and size, ideal for space-constrained applications like drones and robotics.</li>
-                <li><strong>Simplified Manufacturing:</strong> The PCB design eliminates the need for traditional winding processes, enabling precise, repeatable production.</li>
-            </ul>
-        </div>
-	    
-        <img src="pcb.png" alt="PCB Stator Image">
-	    
-        <div class="section">
-            <h2>Control System Design</h2>
-            <p>The motor's control system dynamically activates individual stator coils based on back Electromotive Force (EMF), ensuring efficient energy use and precise motor control. The control logic avoids the need for external sensors, simplifying the system and reducing hardware requirements.</p>
-        </div>
-
-        <div class="section">
-            <h2>Challenges and Solutions</h2>
-            <p>A major challenge was managing the <strong>thermal load</strong> from the copper traces. The solution involved incorporating copper-filled regions in the PCB design to aid heat dissipation, preventing overheating during operation.</p>
-        </div>
-
-        <div class="section">
-            <h2>Applications</h2>
-            <p>This PCB stator design is ideal for:</p>
-            <ul>
-                <li><strong>Drones:</strong> The lightweight and energy-efficient nature of the motor increases flight time and performance.</li>
-                <li><strong>Robotics:</strong> Efficient, precise motors are required for optimized power consumption and extended operational time.</li>
-                <li><strong>Wearable Devices:</strong> Compact motors are essential for devices like fitness trackers and smartwatches.</li>
-            </ul>
-            <p>The design could also be applied to <strong>electric vehicles</strong>, <strong>portable electronics</strong>, and <strong>sustainable energy systems</strong>.</p>
-        </div>
-
-        <div class="section">
-            <h2>Future Improvements</h2>
-            <p>Future developments could include:</p>
-            <ul>
-                <li><strong>Enhanced Thermal Management:</strong> Optimizing the copper-filled regions for better heat dissipation.</li>
-                <li><strong>Load Testing:</strong> Testing under real-world conditions to refine the motor’s design and robustness.</li>
-                <li><strong>Control System Optimization:</strong> Developing more advanced algorithms for adapting to varying loads.</li>
-                <li><strong>Scalability:</strong> Expanding the design to support higher power outputs with multi-layer PCBs or advanced materials.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Conclusion</h2>
-            <p>This project demonstrates the potential of using <strong>PCB stators</strong> in electric motors to create <strong>lighter</strong>, <strong>more efficient</strong>, and <strong>sustainable</strong> systems. It presents a foundation for future improvements and could transform applications in drones, robotics, wearable devices, and beyond.</p>
-        </div>
+<div class="content">
+    <h1>Lightweight, Energy-Efficient Motor Design Using a PCB Stator</h1>
+	
+    <video controls> 
+	    <source src="video.mp4" type="video/mp4"> 
+	    Your browser does not support the video tag. 
+    </video> 
+	
+    <div class="section">
+        <h2>Overview</h2>
+        <p>This project demonstrates a proof-of-concept motor utilizing a <strong>Printed Circuit Board (PCB) stator</strong> to replace traditional copper windings. By integrating copper traces directly onto the PCB and optimizing thermal management, the design enhances efficiency, simplifies manufacturing, and reduces material usage and waste.</p>
     </div>
+
+    <div class="section">
+        <h2>PCB Stator Design</h2>
+        <p>The motor's stator is built using a <strong>1.2 mm thick, 2-layer PCB</strong> with <strong>0.3 mm wide copper traces</strong>. Key features include:</p>
+        <ul>
+            <li><strong>Integrated Copper Traces:</strong> Replacing traditional windings, these traces optimize energy conversion.</li>
+            <li><strong>Copper-Filled Regions:</strong> These regions help dissipate heat, ensuring the motor operates without overheating.</li>
+            <li><strong>Compact Structure:</strong> The thin PCB reduces the motor's weight and size, ideal for space-constrained applications like drones and robotics.</li>
+            <li><strong>Simplified Manufacturing:</strong> The PCB design eliminates the need for traditional winding processes, enabling precise, repeatable production.</li>
+        </ul>
+    </div>
+	
+    <img src="pcb.png" alt="PCB Stator Image">
+	
+    <div class="section">
+        <h2>Control System Design</h2>
+        <p>The motor's control system dynamically activates individual stator coils based on back Electromotive Force (EMF), ensuring efficient energy use and precise motor control. The control logic avoids the need for external sensors, simplifying the system and reducing hardware requirements.</p>
+    </div>
+
+    <div class="section">
+        <h2>Challenges and Solutions</h2>
+        <p>A major challenge was managing the <strong>thermal load</strong> from the copper traces. The solution involved incorporating copper-filled regions in the PCB design to aid heat dissipation, preventing overheating during operation.</p>
+    </div>
+
+    <div class="section">
+        <h2>Applications</h2>
+        <p>This PCB stator design is ideal for:</p>
+        <ul>
+            <li><strong>Drones:</strong> The lightweight and energy-efficient nature of the motor increases flight time and performance.</li>
+            <li><strong>Robotics:</strong> Efficient, precise motors are required for optimized power consumption and extended operational time.</li>
+            <li><strong>Wearable Devices:</strong> Compact motors are essential for devices like fitness trackers and smartwatches.</li>
+        </ul>
+        <p>The design could also be applied to <strong>electric vehicles</strong>, <strong>portable electronics</strong>, and <strong>sustainable energy systems</strong>.</p>
+    </div>
+
+    <div class="section">
+        <h2>Future Improvements</h2>
+        <p>Future developments could include:</p>
+        <ul>
+            <li><strong>Enhanced Thermal Management:</strong> Optimizing the copper-filled regions for better heat dissipation.</li>
+            <li><strong>Load Testing:</strong> Testing under real-world conditions to refine the motor’s design and robustness.</li>
+            <li><strong>Control System Optimization:</strong> Developing more advanced algorithms for adapting to varying loads.</li>
+            <li><strong>Scalability:</strong> Expanding the design to support higher power outputs with multi-layer PCBs or advanced materials.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <p>This project demonstrates the potential of using <strong>PCB stators</strong> in electric motors to create <strong>lighter</strong>, <strong>more efficient</strong>, and <strong>sustainable</strong> systems. It presents a foundation for future improvements and could transform applications in drones, robotics, wearable devices, and beyond.</p>
+    </div>
+</div>
 
 </body>
 </html>
