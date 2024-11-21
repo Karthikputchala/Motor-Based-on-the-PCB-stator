@@ -19,11 +19,11 @@
         }
         .content {
             max-width: 800px;
-            margin: 0 auto; /* Center content */
+            margin: 0 auto;
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left; /* Align text to the left */
+            text-align: left;
         }
         h1, h2 {
             color: #333;
@@ -40,21 +40,46 @@
         .section {
             margin-bottom: 30px;
         }
+
+        /* Flex container for video and overview */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .flex-container .video {
+            order: 2; /* This ensures the video is on the right */
+            flex: 1;
+        }
+
+        .flex-container .overview {
+            order: 1;
+            flex: 2;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="content">
     <h1>Lightweight, Energy-Efficient Motor Design Using a PCB Stator</h1>
-	
-    <video controls> 
-	    <source src="motor video.mp4" type="video/mp4"> 
-	    Your browser does not support the video tag. 
-    </video> 
-	
-    <div class="section">
-        <h2>Overview</h2>
-        <p>This project demonstrates a proof-of-concept motor utilizing a <strong>Printed Circuit Board (PCB) stator</strong> to replace traditional copper windings. By integrating copper traces directly onto the PCB and optimizing thermal management, the design enhances efficiency, simplifies manufacturing, and reduces material usage and waste.</p>
+    
+    <!-- Flex Container for Video and Overview -->
+    <div class="flex-container">
+        <div class="overview">
+            <div class="section">
+                <h2>Overview</h2>
+                <p>This project demonstrates a proof-of-concept motor utilizing a <strong>Printed Circuit Board (PCB) stator</strong> to replace traditional copper windings. By integrating copper traces directly onto the PCB and optimizing thermal management, the design enhances efficiency, simplifies manufacturing, and reduces material usage and waste.</p>
+            </div>
+        </div>
+        <div class="video">
+            <video controls> 
+                <source src="motor video.mp4" type="video/mp4"> 
+                Your browser does not support the video tag. 
+            </video> 
+        </div>
     </div>
 
     <div class="section">
@@ -67,9 +92,9 @@
             <li><strong>Simplified Manufacturing:</strong> The PCB design eliminates the need for traditional winding processes, enabling precise, repeatable production.</li>
         </ul>
     </div>
-	
+    
     <img src="pcb.jpg" alt="PCB Stator Image">
-	
+    
     <div class="section">
         <h2>Control System Design</h2>
         <p>The motor's control system dynamically activates individual stator coils based on back Electromotive Force (EMF), ensuring efficient energy use and precise motor control. The control logic avoids the need for external sensors, simplifying the system and reducing hardware requirements.</p>
