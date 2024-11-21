@@ -50,15 +50,20 @@
         }
 
         .flex-container .video {
-            order: 2; /* This ensures the video is on the right */
+            order: 2; /* Video on the right */
             flex: 1;
         }
 
         .flex-container .overview {
-            order: 1;
+            order: 1; /* Overview on the left */
             flex: 2;
         }
 
+        /* Layout for the PCB Image below the video */
+        .pcb-image {
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +78,16 @@
                 <h2>Overview</h2>
                 <p>This project demonstrates a proof-of-concept motor utilizing a <strong>Printed Circuit Board (PCB) stator</strong> to replace traditional copper windings. By integrating copper traces directly onto the PCB and optimizing thermal management, the design enhances efficiency, simplifies manufacturing, and reduces material usage and waste.</p>
             </div>
+            <div class="section">
+                <h2>PCB Stator Design</h2>
+                <p>The motor's stator is built using a <strong>1.2 mm thick, 2-layer PCB</strong> with <strong>0.3 mm wide copper traces</strong>. Key features include:</p>
+                <ul>
+                    <li><strong>Integrated Copper Traces:</strong> Replacing traditional windings, these traces optimize energy conversion.</li>
+                    <li><strong>Copper-Filled Regions:</strong> These regions help dissipate heat, ensuring the motor operates without overheating.</li>
+                    <li><strong>Compact Structure:</strong> The thin PCB reduces the motor's weight and size, ideal for space-constrained applications like drones and robotics.</li>
+                    <li><strong>Simplified Manufacturing:</strong> The PCB design eliminates the need for traditional winding processes, enabling precise, repeatable production.</li>
+                </ul>
+            </div>
         </div>
         <div class="video">
             <video controls> 
@@ -82,18 +97,10 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>PCB Stator Design</h2>
-        <p>The motor's stator is built using a <strong>1.2 mm thick, 2-layer PCB</strong> with <strong>0.3 mm wide copper traces</strong>. Key features include:</p>
-        <ul>
-            <li><strong>Integrated Copper Traces:</strong> Replacing traditional windings, these traces optimize energy conversion.</li>
-            <li><strong>Copper-Filled Regions:</strong> These regions help dissipate heat, ensuring the motor operates without overheating.</li>
-            <li><strong>Compact Structure:</strong> The thin PCB reduces the motor's weight and size, ideal for space-constrained applications like drones and robotics.</li>
-            <li><strong>Simplified Manufacturing:</strong> The PCB design eliminates the need for traditional winding processes, enabling precise, repeatable production.</li>
-        </ul>
+    <!-- PCB Image Below the Video -->
+    <div class="pcb-image">
+        <img src="pcb.jpg" alt="PCB Stator Image">
     </div>
-    
-    <img src="pcb.jpg" alt="PCB Stator Image">
     
     <div class="section">
         <h2>Control System Design</h2>
